@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+  
+    font-size: inherit;
+    font-weight: inherit;
+    font-family: inherit;
+    color: inherit;
+  
+    box-sizing: border-box;
+  }
+
+  :root {
+    --main-color: #f8f7f3;
+    --sec-color: #1a24fb;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  
+    width: 100%;
+    height: 40px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    color: var(--main-color);
+    font-weight: 400;
+  
+    background-color: var(--sec-color);
+  
+    border-bottom: 1px solid var(--sec-color);
+    letter-spacing: 0.2em;
+  
+    padding: 10px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body {
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+  }
+
+  .cards {
+    max-width: 1280px;
+    display: flex;
+    gap: 80px 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+    background-color: var(--main-color);
+
+
+  }
+.card {
+    border: solid 1px var(--sec-color);
+    max-width: 360px;
+    position: relative;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    
+    
+    
+}
+
+span.number {
+    width: 40px;
+    height: 40px;
+    font-family: "Montserrat", sans-serif;
+  
+    position: absolute;
+    top: -100x;
+    right: 0px;
+    margin-top: -40px;
+  
+    font-size: 24px;
+    font-weight: 700;
+  
+    color: var(--sec-color);
+
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    border-radius: 50%;
+  }
+h3 {
+    
+    color: var(--sec-color);
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0.2em;
+    font-size: 12px;
+    margin-bottom: 20px;
+    
+    
+
+  }
+  h2 {
+  
+    color: var(--sec-color);
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-family: "Overpass", sans-serif;
+    color: var(--sec-color);
+    font-size: 16px;
+  }
+  button {
+    color: var(--sec-color);
+    background-color: var(--main-color);
+    border: 0;
+    margin-top: 20px;
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    height: 18px;
+    font-size: 14px;
+    text-align: left;
+  }
+  button:hover {
+    background-color: var(--sec-color);
+    color: var(--main-color);
+  }
+  @media (max-width: 360px) {
+    .card {
+        
+        width: 95%;
+        max-width: none;
+    }
+    .card-container {
+       margin-left: 20px;
+       
+        
+    }
+    .cards {
+        gap:90px;
+    }
+}
